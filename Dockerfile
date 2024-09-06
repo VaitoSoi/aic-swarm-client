@@ -8,4 +8,4 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install tensorflow_hub
 
-CMD ["python", "main.py", "--url", "server.net:8000"]
+ENTRYPOINT ["python", "main.py", "--url"]
